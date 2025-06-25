@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>627587263903-kdl1as2desoj2a96kpvuh0kk2rup1cbi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.627587263903-kdl1as2desoj2a96kpvuh0kk2rup1cbi</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>627587263903-qbae49q8qdstcth7a6ca48bho5jrjv80.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAILj6xsFUruezEWHi8zXDGD7X3gbuz3T4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>627587263903</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.flow.chat.flowChat</string>
+	<key>PROJECT_ID</key>
+	<string>friendlychat-db3ea</string>
+	<key>STORAGE_BUCKET</key>
+	<string>friendlychat-db3ea.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:627587263903:ios:ac4c7527f44f7b902b61aa</string>
+	<key>DATABASE_URL</key>
+	<string>https://friendlychat-db3ea.firebaseio.com</string>
+</dict>
+</plist>

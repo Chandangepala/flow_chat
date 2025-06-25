@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "627587263903",
+    "firebase_url": "https://friendlychat-db3ea.firebaseio.com",
+    "project_id": "friendlychat-db3ea",
+    "storage_bucket": "friendlychat-db3ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627587263903:android:a740b63add4ddd00",
+        "android_client_info": {
+          "package_name": "com.apps.basic.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627587263903-qbae49q8qdstcth7a6ca48bho5jrjv80.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.basic.friendlychat",
+            "certificate_hash": "b82e54366b6bfa059eddeeaf4a48e03bd694316e"
+          }
+        },
+        {
+          "client_id": "627587263903-d86s2oljcjb0ch3rurlhkasm8uart5kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF-CTZb-qh4vvMqJPOiQZtd7GA6h6x11c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627587263903-d86s2oljcjb0ch3rurlhkasm8uart5kv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "627587263903-kdl1as2desoj2a96kpvuh0kk2rup1cbi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flow.chat.flowChat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627587263903:android:54628c21c6e5975d2b61aa",
+        "android_client_info": {
+          "package_name": "com.flow.chat.flow_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627587263903-d86s2oljcjb0ch3rurlhkasm8uart5kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF-CTZb-qh4vvMqJPOiQZtd7GA6h6x11c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627587263903-d86s2oljcjb0ch3rurlhkasm8uart5kv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "627587263903-kdl1as2desoj2a96kpvuh0kk2rup1cbi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flow.chat.flowChat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627587263903:android:64e58dacc0483faa",
+        "android_client_info": {
+          "package_name": "com.google.firebase.udacity.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627587263903-d86s2oljcjb0ch3rurlhkasm8uart5kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF-CTZb-qh4vvMqJPOiQZtd7GA6h6x11c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627587263903-d86s2oljcjb0ch3rurlhkasm8uart5kv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "627587263903-kdl1as2desoj2a96kpvuh0kk2rup1cbi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flow.chat.flowChat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
