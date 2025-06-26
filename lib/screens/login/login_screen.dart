@@ -59,6 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Theme.of(context).textTheme; // Get text theme for easy access
 
     return Scaffold(
+      backgroundColor: Colors.black54,
       body: SafeArea(
         // Ensures content is not obscured by notches/system bars
         child: Center(
@@ -76,16 +77,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     CrossAxisAlignment.stretch, // Stretch widgets horizontally
                 children: <Widget>[
                   // --- Logo/App Name ---
-                  Icon(
-                    Icons.apple, // Example Icon
-                    size: 60,
-                    color: Theme.of(context).primaryColor,
-                  ),
+                  Image.asset("assets/images/flow_chat_logo.png", width: 150, height: 150,),
                   const SizedBox(height: 16),
                   Text(
                     'Welcome Back!',
                     style: textTheme.displayLarge?.copyWith(
                       fontSize: 24,
+                      color: Colors.white
                     ), // Use theme text style
                     textAlign: TextAlign.center,
                   ),
@@ -93,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     'Log in to your account',
                     style: textTheme.bodyLarge?.copyWith(
-                      color: Colors.grey[600],
+                      color: Colors.grey.shade100,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -102,9 +100,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
+                    style: TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                       hintText: 'Enter your email',
-                      prefixIcon: Icon(Icons.email_outlined),
+                      prefixIcon: Icon(Icons.email_outlined, color: Colors.white54,),
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -124,15 +123,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     controller: _passwordController,
                     obscureText: _obscurePassword, // Use state variable
+                    style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       hintText: 'Enter your password',
-                      prefixIcon: const Icon(Icons.lock_outline),
+                      prefixIcon: const Icon(Icons.lock_outline, color: Colors.white54,),
                       // Suffix icon to toggle password visibility
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscurePassword
                               ? Icons.visibility_off_outlined
                               : Icons.visibility_outlined,
+                          color: Colors.white54,
                         ),
                         onPressed: _togglePasswordVisibility,
                       ),
@@ -184,7 +185,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     ),
                                   ),
                                 )
-                                : const Text('Log In'),
+                                : const Text('Log In',),
                       );
                     },
                     listener: (context, state) {
@@ -227,7 +228,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Text(
                         "Don't have an account?",
                         style: textTheme.bodyLarge?.copyWith(
-                          color: Colors.grey[600],
+                          color: Colors.grey.shade100,
                         ),
                       ),
                       TextButton(
@@ -253,7 +254,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           );
                         },
-                        child: const Text('Sign Up'),
+                        child: const Text('Sign Up', style: TextStyle(color: Colors.white),),
                       ),
                     ],
                   ),

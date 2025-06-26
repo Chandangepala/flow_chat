@@ -78,12 +78,13 @@ class _SignupScreenState extends State<SignupScreen> {
     final textTheme = Theme.of(context).textTheme; // Get text theme
 
     return Scaffold(
+      backgroundColor: Colors.black54,
       // Add an AppBar to easily navigate back
       appBar: AppBar(
         title: const Text('Create Account'),
         backgroundColor: Colors.transparent, // Make app bar transparent
-        elevation: 0, // No shadow
-        foregroundColor: Colors.black87, // Back arrow color
+        elevation: 2, // No shadow
+        foregroundColor: Colors.white, // Back arrow color
       ),
       body: SafeArea(
         child: Center(
@@ -100,6 +101,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     'Get Started',
                     style: textTheme.displayLarge?.copyWith(
                       fontSize: 24,
+                      color: Colors.white
                     ), // Use theme text style
                     textAlign: TextAlign.center,
                   ),
@@ -107,7 +109,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   Text(
                     'Create an account to continue',
                     style: textTheme.bodyLarge?.copyWith(
-                      color: Colors.grey[600],
+                      color: Colors.grey.shade100,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -116,9 +118,10 @@ class _SignupScreenState extends State<SignupScreen> {
                   // --- Name Field ---
                   TextFormField(
                     controller: _nameController,
+                    style: TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                       hintText: 'Enter your full name',
-                      prefixIcon: Icon(Icons.person_outline),
+                      prefixIcon: Icon(Icons.person_outline, color: Colors.white54,),
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -134,9 +137,10 @@ class _SignupScreenState extends State<SignupScreen> {
                   TextFormField(
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
+                    style: TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                       hintText: 'Enter your email',
-                      prefixIcon: Icon(Icons.email_outlined),
+                      prefixIcon: Icon(Icons.email_outlined, color: Colors.white54,),
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -156,14 +160,16 @@ class _SignupScreenState extends State<SignupScreen> {
                   TextFormField(
                     controller: _passwordController,
                     obscureText: _obscurePassword,
+                    style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       hintText: 'Enter your password',
-                      prefixIcon: const Icon(Icons.lock_outline),
+                      prefixIcon: const Icon(Icons.lock_outline, color: Colors.white54,),
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscurePassword
                               ? Icons.visibility_off_outlined
                               : Icons.visibility_outlined,
+                          color: Colors.white54,
                         ),
                         onPressed: _togglePasswordVisibility,
                       ),
@@ -186,14 +192,16 @@ class _SignupScreenState extends State<SignupScreen> {
                   TextFormField(
                     controller: _confirmPasswordController,
                     obscureText: _obscureConfirmPassword,
+                    style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       hintText: 'Confirm your password',
-                      prefixIcon: const Icon(Icons.lock_outline),
+                      prefixIcon: const Icon(Icons.lock_outline, color: Colors.white54,),
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscureConfirmPassword
                               ? Icons.visibility_off_outlined
                               : Icons.visibility_outlined,
+                          color: Colors.white54,
                         ),
                         onPressed: _toggleConfirmPasswordVisibility,
                       ),
@@ -212,13 +220,14 @@ class _SignupScreenState extends State<SignupScreen> {
 
                   const SizedBox(height: 16),
 
-                  // --- Email Field ---
+                  // --- Mobile Field ---
                   TextFormField(
                     controller: _mobileController,
                     keyboardType: TextInputType.number,
+                    style: TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                       hintText: 'Enter Mobile Number',
-                      prefixIcon: Icon(Icons.phone_android),
+                      prefixIcon: Icon(Icons.phone_android, color: Colors.white54,),
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -237,16 +246,18 @@ class _SignupScreenState extends State<SignupScreen> {
                   Container(
                     child: DropdownButton<String>(
                       value: _selectedGender,
-                      hint: Text("Select Gender"),
+                      hint: Text("Select Gender", style: TextStyle(color: Colors.white),),
+                      dropdownColor: Colors.black54,
                       items:
                           genderList.map<DropdownMenuItem<String>>((String gender) {
                             return DropdownMenuItem<String>(
                               value: gender,
                               child: Container(
+                                color: Colors.black54,
                                 width: 200,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(18, 8, 8, 8),
-                                  child: Text(gender, style: TextStyle(fontSize: 18),),
+                                  child: Text(gender, style: TextStyle(fontSize: 18, color: Colors.white),),
                                 ),
                               ),
                             );

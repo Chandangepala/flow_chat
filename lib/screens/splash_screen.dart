@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flow_chat/data/remote/firebase_repository.dart';
 import 'package:flow_chat/screens/home_screen.dart';
+import 'package:flow_chat/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/SharedPref.dart';
@@ -45,12 +46,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black54,
       body: Container(
-        color: Colors.black45,
+        color: Colors.black54,
         width: double.infinity,
         height: double.infinity,
         alignment: Alignment.center,
-        child: Icon(Icons.apple, size: 100, color: Colors.white),
+        child: Image.asset("assets/images/flow_chat_logo.png", width: 250, height: 250,),
       ),
     );
   }

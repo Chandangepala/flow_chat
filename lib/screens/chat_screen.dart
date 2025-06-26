@@ -3,8 +3,6 @@ import 'package:flow_chat/data/remote/firebase_repository.dart';
 import 'package:flow_chat/models/user_model.dart';
 import 'package:flow_chat/utils/FormatDateTime.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-
 import '../models/message_model.dart';
 
 class ChatScreen extends StatefulWidget {
